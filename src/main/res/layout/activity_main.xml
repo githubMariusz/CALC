@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.q.mycalc.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/liczy_pies"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Calc_Mini"
+        android:onClick="Calc_Mini"
+        android:text="Mini_Calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/Calc_Big"
+        android:layout_alignRight="@+id/Exit"
+        android:layout_alignEnd="@+id/Exit" />
+
+    <Button
+        android:id="@+id/Calc_Big"
+        android:onClick="Calc_Big"
+        android:text="Calc Big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/Calc_Mini"
+        android:layout_alignEnd="@+id/Calc_Mini"
+        android:layout_alignLeft="@+id/Calc_Mini"
+        android:layout_alignStart="@+id/Calc_Mini" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:onClick="Exit"
+        android:text="Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_below="@+id/Calc_Big"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

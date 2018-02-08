@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.q.mycalc.Activity_Min">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#0f0"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="24sp" />
+        <EditText
+            android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_div"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="54dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignParentLeft="true" />
+        <EditText
+            android:id="@+id/box2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/box1"
+            android:layout_alignBottom="@+id/box1"
+            android:layout_alignEnd="@+id/textView"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_alignRight="@+id/textView" />
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_minus"
+            android:layout_alignStart="@+id/box2"
+            android:text="@string/plus_mini"
+            android:layout_alignLeft="@+id/box2" />
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_centerVertical="true"
+            android:text="@string/minus_mini"
+            android:layout_alignRight="@+id/textView" />
+        <Button
+            android:id="@+id/btn_div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/resultText"
+            android:layout_alignEnd="@+id/box1"
+            android:text="@string/div_mini"
+            android:layout_alignRight="@+id/box1" />
+        <Button
+            android:id="@+id/btn_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/box1"
+            android:text="@string/multi_mini"
+            android:layout_alignLeft="@+id/textView" />
+        <EditText
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/resultText"
+            android:layout_centerHorizontal="true"
+            android:onClick="Click_Back"
+            android:text="@string/back_mini"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
